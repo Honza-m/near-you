@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+Results for {{r['postcode']}}
+{% endblock %}
+
+{% block content %}
+<div class="container h-100">
+  <div class="row justify-content-center h-100">
+    <div class="col col-sm-12 col-md-10 h-100 bg-light">
+      {{r}}
+    </div>
+  </div>
+</div>
+{% endblock %}

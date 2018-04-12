@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row h-100 justify-content-center align-items-center">
+  <div id="searchbox" class="card m-auto">
+    <div class="card-body text-center">
+      <h2 class="card-title">
+        Enter your post code
+      </h1>
+      <p class="card-text">
+        <input type="text" id="postcode">
+      </p>
+      <button type="button" class="btn btn-success" id="search">Search</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block custom_js %}
+<script>
+$(document).ready(function(){
+  $('#search').click(function(){
+    var postcode = encodeURIComponent($('#postcode').val());
+    console.log(postcode);
+    window.location.href = "/postcode/" + postcode;
+  });
+});
+</script>
+{% endblock %}

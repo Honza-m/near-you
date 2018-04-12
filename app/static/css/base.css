@@ -1,0 +1,25 @@
+/* BASE */
+html, body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right top, #303030, #294b61, #006e7a, #008e60, #76a313);
+}
+
+/* SEARCHBOX */
+#searchbox h2 {
+  font-family: 'Anton', sans-serif;
+}
+#searchbox input {
+  width: 350px;
+  padding: 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  height: 4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#searchbox button {
+
+}
